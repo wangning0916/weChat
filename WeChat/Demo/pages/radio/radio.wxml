@@ -1,0 +1,5 @@
+<radio-group bindchange="change">
+    <view wx:for="{{items}}">
+        <radio value="{{item.value}}" checked="item.checked" />{{item.name}}
+    </view>
+</radio-group>

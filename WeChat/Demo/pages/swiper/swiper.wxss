@@ -1,0 +1,11 @@
+/**index.wxss**/
+.swiper-container{height: 400rpx;}
+.bg-red{background-color: #ff0000;}
+.bg-orange{background-color: #ff9000;}
+.bg-green{background-color: #008000;}
+
+.self-container{position: relative}
+.tab{height: 70rpx;width: 100%;position: absolute;bottom: 0px;display: flex;text-align: center;justify-content: center;align-items: center;}
+.tab-item{width: 50rpx;height: 50rpx;line-height: 50rpx;background-color: #ccc;margin-right: 10px;color: #fff;border-radius: 5px;}
+.selected{background-color: #ff0000;}
+image{width: 100%;}

@@ -1,0 +1,13 @@
+<!--size-->
+<button size="default">size1</button>
+<button size="mini">size2</button>
+
+<!--type-->
+<button type="default">type1</button>
+<button type="primary">type2</button>
+<button type="warn">type3</button>
+
+<button type="primary" disabled="{{disabled}}" bindtap="setDisabled">设置disabled</button>
+<button type="primary" plain="{{plain}}" bindtap="setPlain">设置plain</button>
+<button type="primary" loading="{{loading}}" bindtap="setLoading">设置loading</button>
+<!---->

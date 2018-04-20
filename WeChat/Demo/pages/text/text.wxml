@@ -1,0 +1,8 @@
+<text>{{str}}</text>
+<view>
+    <text class="text" wx:for="{{text}}">
+        {{item}}
+    </text>
+</view>
+<button bindtap="add" type="primary">点击添加数据</button>
+<button bindtap="remove">点击删除数据</button>

@@ -1,0 +1,2 @@
+/**index.wxss**/
+.block{padding: 10px 0px;border: 1px solid #ddd;margin-bottom: 10px;}

@@ -1,0 +1,13 @@
+<view class="section icon-container">
+    <icon type="success" size="{{icon.size}}" style="opacity:{{icon.opacity/10}}"/>
+</view>
+
+<view class="section">
+    <view>改变图标大小：</view>
+    <slider  show-value min="20" max="100" step="5" value="{{icon.size}}" bindchange="sizeChange"/>
+</view>
+
+<view class="section">
+    <view>改变透明度：</view>
+    <slider  show-value min="0" max="10" step="1" value="{{icon.opacity}}" bindchange="opacityChange"/>
+</view>

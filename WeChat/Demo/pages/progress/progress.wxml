@@ -1,0 +1,7 @@
+<progress percent="20" color="#09BB07" />
+
+<progress percent="40" show-info="true" stroke-width="10"/>
+
+<progress percent="60" show-info="true" active="true"/>
+
+<progress percent="80" show-info="true" backgroundColor="#999" activeColor="#ff9000"/>

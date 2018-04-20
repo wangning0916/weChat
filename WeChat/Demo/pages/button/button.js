@@ -1,0 +1,23 @@
+Page({
+    data:{
+        size:'default',
+        disabled:false,
+        plain:false,
+        loading:false
+    },
+    setDisabled:function(){
+       this.setData({
+           disabled: !this.data.disabled
+       });
+    },
+    setPlain:function(){
+        this.setData({
+            plain:!this.data.plain
+        });
+    },
+    setLoading:function(){
+        this.setData({
+            loading:!this.data.loading
+        });
+    }
+});

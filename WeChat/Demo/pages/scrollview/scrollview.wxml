@@ -1,0 +1,10 @@
+<!--index.wxml-->
+<scroll-view class="scroll-container" scroll-y="true" upper-threshold="0" lower-threshold="0" scroll-into-view="{{toView}}" bindscrolltoupper="Upper" bindscrolltolower="Lower" scroll-top="{{scrollTop}}" bindscroll="Scroll">
+    <view id="item-1" class="scroll-item bgRed"></view>
+    <view id="item-2" class="scroll-item bgOrange"></view>
+    <view id="item-3" class="scroll-item bgBlue"></view>
+    <view id="item-4" class="scroll-item bgGreen"></view>
+    <view id="item-5" class="scroll-item bgYellow"></view>
+    <view id="item-6" class="scroll-item bgPurple"></view>
+</scroll-view>
+<view bindtap="scrollToTop">点击返回顶部</view>

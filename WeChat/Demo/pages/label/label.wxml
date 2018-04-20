@@ -1,0 +1,24 @@
+<label>
+    <checkbox-group bindchange="checkboxChange">
+        <checkbox value="123" />点击文字也能选中复选框
+    </checkbox-group>
+</label>
+
+<label>
+    <radio-group bindchange="radioChange">
+        <radio value="456" />点击文字也能选中单选框
+    </radio-group>
+</label>
+
+<label>
+    <switch type="switch" bindchange="switchChange"/>点击文字也能选中开关
+</label>
+
+
+<!--label  for-->
+<view>
+    <label for="item">
+        <checkbox value="987" />内部元素
+    </label>
+    <checkbox value="654" id="item" />外部元素
+</view>

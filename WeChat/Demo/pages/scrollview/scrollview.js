@@ -1,0 +1,23 @@
+//index.js
+Page({
+    data:{
+        toView:'item-3'//第一次渲染时scroll默认滚动到id位item-3的区域
+    },
+    Upper:function(event){
+        //console.log(event);
+        console.log("触发滚动到顶部事件");
+    },
+    Lower: function (event){
+        //console.log(event);
+        console.log("触发滚动到底部事件");
+    },
+    Scroll:function(event){
+        //console.log(event);
+        console.log(event.detail)
+    },
+    scrollToTop:function(){
+        this.setData({
+            scrollTop:0
+        });
+    }
+});

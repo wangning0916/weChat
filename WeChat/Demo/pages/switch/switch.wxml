@@ -1,0 +1,3 @@
+<view wx:for="{{switchs}}">
+    <switch type="{{item.type}}" checked="{{item.checked}}" data-name="{{item.name}}" bindchange="{{item.changeEventName}}" />
+</view>

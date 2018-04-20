@@ -1,0 +1,9 @@
+/**index.wxss**/
+.scroll-container{height:800rpx;border: 1px solid #ddd;}
+.scroll-container .scroll-item{width: 120%;height: 300rpx;}
+.bgRed{background-color: #ff0000;}
+.bgOrange{background-color: #ff9000;}
+.bgBlue{background-color: #0000ff;}
+.bgGreen{background-color: #008000;}
+.bgYellow{background-color: #ffff00;}
+.bgPurple{background-color: #800080;}

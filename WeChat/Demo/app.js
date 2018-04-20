@@ -1,0 +1,16 @@
+//app.js
+App({
+    onLaunch:function(){
+        console.log("小程序初始化时触发onLaunch")
+    },
+    onShow:function(){
+        console.log("小程序启动或者从后台到前台触发onShow")
+    },
+    onHide:function(){
+        console.log("小程序从前台进入到后台触发onHide");
+    },
+    globalFunction:function(){
+        console.log("自定义的全局函数")
+    },
+    globalData:10
+})

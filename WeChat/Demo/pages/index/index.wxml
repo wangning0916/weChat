@@ -1,0 +1,91 @@
+<!--index.wxml-->
+<view bindtap="countClick" class="block">点击了{{count}}次</view>
+
+<!--数据绑定-->
+<view class="block">
+    <!--内容-->
+    <view>作为内容绑定：{{name}}</view>
+    <!--属性-->
+    <view id="attr-{{id}}" style="border:{{border}}">作为组件属性</view>
+    <view wx:if="{{show}}">作为控制属性</view>
+    <!--关键字-->
+    <checkbox checked="{{true}}" />
+</view>
+
+<!--运算-->
+<view class="block">
+    <!--三元表达式-->
+    <view>{{show ? '显示文本' : '不显示文本'}}</view>
+    <!--算数运算-->
+    <view>{{num1 + num2}} + 1 = ?</view>
+    <!--字符串运算-->
+    <view>{{"name:" + name}}</view>
+    <!--逻辑判断-->
+    <view>{{num1 < 0}}</view>
+    <!--数据路径运算-->
+    <view>{{object.age}} {{array[1]}}</view>
+    <!--组合1 数组-->
+    <view>{{[array,6,7,8,9]}}</view>
+    <!--组合2 对象-->
+   <template name="myTemplate2">
+        <view>{{name}},{{age}}</view>
+   </template>
+   <template is="myTemplate2" data="{{name:name,age:object.age}}"></template>   
+</view>
+
+<!--列表渲染-->
+<view class="block">
+    <view wx:for="{{array}}">{{index}},{{item}}</view>
+
+    <view wx:for="{{array2}}" wx:for-index="myIndex" wx:for-item="myItem">
+        <block wx:for="{{myItem}}" wx:for-index="subIndex" wx:for-item="subItem">
+            {{subItem}}
+        </block>
+    </view>
+</view>
+
+<!--条件渲染-->
+<view class="block">
+    <view wx:if="{{flag}} == 'weixin'">微信</view>
+    <view wx:elif="{{flag}} == 'qq'">qq</view>
+    <view wx:else="{{flag}} == 'sina'">微博</view>
+</view>
+
+<!--模板-->
+<view class="block">
+    <template name="myTemplate">
+        <view>{{firstName}} - {{lastName}}</view>
+    </template>
+    <template is="myTemplate" data="{{...tem1}}"></template>
+    <template is="myTemplate" data="{{...tem2}}"></template>
+    <template is="myTemplate" data="{{...tem3}}"></template>
+</view>
+<!--事件-->
+<view class="block">
+    <view bindtap="tap1">
+        view1
+        <view catchtap="tap2">
+            view2
+            <view bindtap="tap3">
+                view3
+            </view>
+        </view>
+    </view>
+
+    <view bindtap="tap4" data-name-nick="昵称" data-name-real="真实姓名">
+        view4
+        <view bindtap="tap5" data-name-nick="昵称2" data-name-real="真实姓名2">
+            view5
+        </view>
+    </view>
+</view>
+
+<!--view组件-->
+<view class="block">
+    <view style="display:flex">
+        <view style="flex-grow:1;height:60px;background-color:#666;">view组件1</view>
+        <view style="flex-grow:1;height:60px;background-color:#999;">view组件2</view>
+        <view style="flex-grow:1;height:60px;background-color:#ddd;">view组件3</view>
+    </view>
+</view>
+
